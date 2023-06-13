@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 2%;
+    background-color: #cecece;
+}
+
+header .title{
+    width: 100%;
+    color: #73732d;
+}
+
+header .elements{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+header .elements .search-bar{
+    width: 50%;
+}
+header .elements .search-bar input{
+    padding: 10px;
+    border-radius: 6px;
+}
+header .elements .create-user{
+    width: 50%;
+}
+
+header .elements .create-user button{
+    padding: 12px;
+    background-color: #73732d;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: #000000 0 0 5px;
+    border: none;
+    border-radius: 6px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-color: #73732d;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #73732d;
+    color: white;
+}
+
+tr {
+    background-color: #cecece;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #fafafa;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pagination {
+    margin-top: 10px;
+}
+
+.pagination button {
+    background-color: #3c3c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #a1d0ff;
+}

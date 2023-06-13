@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js" defer></script>
+    <script src="pagination.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Api</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="title">API</h2>
+        <div class="elements">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Buscar por nombre" onkeyup="searchUsers()">
+            </div>
+            <div class="create-user">
+                <button onclick="createUser()">Crear usuario</button>
+            </div>
+        </div>
+    </header>
+
+
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Telefono</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <div id="pagination" class="pagination"></div>
+
+    <div id="createUserModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Crear Usuario</h2>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br><br>
+            <label for="phone">Telefono:</label>
+            <input type="text" id="phone" name="phone"><br><br>
+            <button onclick="addUser()">Agregar</button>
+        </div>
+    </div>
+
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Editar Usuario</h2>
+            <label for="editName">Nombre:</label>
+            <input type="text" id="editName" name="editName"><br><br>
+            <label for="editEmail">Email:</label>
+            <input type="text" id="editEmail" name="editEmail"><br><br>
+            <label for="editPhone">Telefono</label>
+            <input type="text" id="editPhone" name="editPhone"><br><br>
+            <button onclick="storeChanges()">Guardar</button>
+        </div>
+    </div>
+</body>
+
+</html>
